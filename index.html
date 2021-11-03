@@ -11,8 +11,13 @@
         content="The portfolio page and official Website of Jeffrey Anderson-Lester, Full-Stack Web Developer">
 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
 
 
     <title>Jeff Anderson-Lester's Portfolio Site</title>
@@ -22,61 +27,73 @@
 
     <!--Begin header/navigation section-->
 
-    <header>
+    <header class="flex-row">
+        <h1 class="text-center">JEFFREY ANDERSON-LESTER</h1>
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#profile">About Me</a>
+                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="assets/img/resume.pdf" target="_blank">My Resume</a>
+                        <a class="nav-link" href="#contact">Contact Me</a>
 
 
-        <div>
-            <h1>JEFFERY ANDERSON-LESTER</h1>
-        </div>
+                    </div>`
+                </div>
+            </div>
+        </nav>
+
     </header>
     <!--End header/navigation section-->
 
-    <!--Nav Bar Section-->
-    <nav class="topnav" id="topnav">
-        <a href="#home" class="active">Home</a>
-        <div id="myLinks">
-            <a href="#profile">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="assets/img/resume.pdf" target="_blank">My Resume</a>
-            <a href="#contact">Contact Me</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
-    <!--End of navbar section-->
 
 
     <!--Begin Profile section-->
+    <section id="profile" class="container-fluid">
+        <div class="row mb-3">
+            <div class="col-3">
+                <img src="assets/img/Profile1.jpg" alt="Jeffrey Anderson-Lester"
+                    class="img-fluid shadow bg-primary rounded-2 ml-3 mt-3">
+            </div>
+            <div class="col-8 mt-2">
+                <p>
+                <h4><strong>About Me</strong></h4>
 
-    <section id="profile" class="profiles hero">
-
-        <img src="assets/img/Profile1.jpg" alt="Jeffrey Anderson-Lester">
-
-        <p>About Me
-            <br><br>
-            I am Jeffrey Anderson-Lester. I am a Full-stack web developer currently enrolled at the Rice University
-            Full-Stack Developer program.
-            <br>
-            I am specializing in HTML5, CSS3, JavaScript, Git, jQuery, Bootstrap 5, Express.JS, SQL, NoSQL, React,
-            and
-            MERN.
-            <br>
-            I utilize Visual Studio, Visual Studio Code, JSON, NodeJS, Git, and others as
-            needed.
-            <br>
-            Fully versed in Windows OS, fully versed in command line and setting up and using virtual
-            environments.
-            Dedicated professional with 9+ years of experience in oil field related drilling fluid engineering and
-            with
-            a focus on safety and timely solutions for customer needs.
-            <br>
-            Committed to delivering high quality troubleshooting and solutions.
-            <br>
-            Energetic, organized and professional with an eye for detail. Able to work under pressure efficiently
-            solo
-            or on a team.
-        </p>
+                I am Jeffrey Anderson-Lester. I am a Full-stack web developer currently enrolled at the Rice
+                University
+                Full-Stack Developer program.
+                <br>
+                I am specializing in HTML5, CSS3, JavaScript, Git, jQuery, Bootstrap 5, Express.JS, SQL, NoSQL,
+                React,
+                and
+                MERN.
+                <br>
+                I utilize Visual Studio, Visual Studio Code, JSON, NodeJS, Git, and others as
+                needed.
+                <br>
+                Fully versed in Windows OS, fully versed in command line and setting up and using virtual
+                environments.
+                Dedicated professional with 9+ years of experience in oil field related drilling fluid engineering
+                and
+                with
+                a focus on safety and timely solutions for customer needs.
+                <br>
+                Committed to delivering high quality troubleshooting and solutions.
+                <br>
+                Energetic, organized and professional with an eye for detail. Able to work under pressure
+                efficiently
+                solo
+                or on a team.
+                </p>
+            </div>
+        </div>
 
 
     </section>
@@ -85,166 +102,200 @@
 
     <!--Begin projects section-->
 
-    <section id="projects" class="section-title">
+    <section id="projects" class="section-title container-fluid text-center">
         <a href="projects"></a>
-        <p>Projects</p>
-    </section>
+        <H2>Projects</H2>
+        <hr>
+        </hr>
+        <!--Big project-->
+        <div class="projects">
+            <div class="card card-shadow" style="width: auto;">
+                <img src="assets/img/classProject1.png" class="card-img-top rounded" alt="Texas Stargazing Website">
+                <div class="card-body">
+                    <h5 class="card-title">Texas Stargazing Website</h5>
+                    <p class="card-text text-justify">Front-end team project built in collaboration with Julie Summers
+                        and Reagan
+                        Price in an Agile development environment.
+                        This
+                        website utilizes
+                        HTML5,
+                        CSS3, JavaScript, and was styled with the Bulma framework. It uses two
+                        API calls for the data on the page and it is 100% mobile responsive.</p>
+                </div>
+                <div class="card-body">
+                    <a href="https://rprice000.github.io/texas-stargazing/index.html" class="card-link">Web
+                        Deployment</a>
+                    <a href="https://rprice000.github.io/texas-stargazing/index.html" class="card-link">GitHub
+                        Repository</a>
+                </div>
+            </div>
+        </div>
 
-    <!--Big project-->
-
-    <section id="projects" class="projects">
-        <article class="p-card-big">
-            <h2>Texas Stargazing Website</h2>
-            <a href="https://jeffgoji.github.io/run-buddy-project/" rel="noreferrer"><img
-                    src="assets/img/classProject1.png" alt="Texas Stargazing Website" Website"></a>
-            <p>Team project built in collaboration with Julie Summers and Reagan Price. This website utilizes HTML5,
-                CSS3, JavaScript and was styled with Bulma framework. It uses two
-                API calls for the data on the page and it is 100% mobile responsive.</p>
-            <ul>
-                <li>Web address:
-                    <br>
-                    <a href="https://rprice000.github.io/texas-stargazing/index.html"
-                        rel="noreferrer">https://rprice000.github.io/texas-stargazing/index.html</a>
-                </li>
-                <li>Git Repository:
-                    <br>
-                    <a href="https://github.com/rprice000/texas-stargazing"
-                        rel="noreferrer">https://github.com/rprice000/texas-stargazing</a>
-                    <br>
-
-                </li>
-            </ul>
-
-        </article>
-
-    </section>
-
-    <!--End big project section-->
+        <!--End big project section-->
 
 
 
-    <!--Smaller project cards section-->
-    <section id="projects" class="projects">
-        <article class="p-cards">
-            <h2>Run Buddy Website</h2>
-            <a href="https://jeffgoji.github.io/run-buddy-project/" rel="noreferrer"><img
-                    src="assets/img/runbuddyLarge.png" alt="Run Buddy Website"></a>
-            <p>Website project using HTML5 and CSS3 with flexbox styling. It is 100% mobile responsive</p>
-            <ul>
-                <li>Web address:
-                    <br>
-                    <a href="https://jeffgoji.github.io/run-buddy-project/"
-                        rel="noreferrer">https://jeffgoji.github.io/run-buddy-project/</a>
-                </li>
-                <li>Git Repository:
-                    <br>
-                    <a href="https://github.com/JeffGoji/run-buddy-project"
-                        rel="noreferrer">https://github.com/JeffGoji/run-buddy-project</a>
-                    <br>
+        <!--Smaller project cards section-->
 
-                </li>
-            </ul>
+        <!--First card-->
+        <section class="container-fluid">
+            <div class="row mt-3">
+                <div class="card rounded-2 card-shadow m-2 mt-3" style="width: 18rem;">
+                    <a href="/assets/img/weatherapi.png" target="_blank" rel="noreferrer"><img
+                            src="/assets/img/weatherapi.png" alt="JeffGoji.com picture"
+                            class="rounded card-img-top"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">API-Weather-App</h5>
+                        <p class="card-text">This is a Weather App that uses the Open Weather API call for it's weather
+                            content. It will save whatever cities you have searched for into local storage and loads
+                            them as buttons on the left side. You can click on the generated buttons to reload the
+                            weather from those searches. Layout is handled using Bootstrap 5 and CSS.
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://jeffgoji.github.io/API-Weather-App/" target="_blank" rel="noreferrer"
+                            class="card-link">Web
+                            Deployment</a>
+                        <a href="https://github.com/JeffGoji/API-Weather-App" target="_blank" rel="noreferrer"
+                            class="card-link">GitHub
+                            Page
+                            link</a>
 
-        </article>
-        <article class="p-cards">
-            <h2>JeffGoji.com Website</h2><a href="https://jeffgoji.com" target="_blank" rel="noreferrer"><img
-                    src="assets/img/jeffgoji.png" alt="JeffGoji.com picture"></a>
-            <p>My personal Mazda MX5 Website I built using HTML5, CSS3, JavaScript, Jquery, and is built on the
-                Bootstrap 5
-                framework for
-                it's
-                mobile first responsive design.</p>
-            <ul>
-                <li>Web address:
-                    <br>
-                    <a href="https://jeffgoji.com" target="_blank" rel="noreferrer">https://jeffgoji.com</a>
-                </li>
-                <li>Git Repository:
-                    <br>
-                    <a href="https://github.com/JeffGoji/jeffgoji.com" target="_blank"
-                        rel="noreferrer">https://github.com/JeffGoji/jeffgoji.com</a>
-                    <br>
+                    </div>
+                </div>
 
-                </li>
-            </ul>
-        </article>
 
-        <article id="projects" class="p-cards">
-            <h2>GHM Website</h2><a href="https://jeffgoji.github.io/ghm/index.html" rel="noreferrer"><img
-                    src="assets/img/ghm.png" alt="GHM Project"></a>
-            <p>A free redesign/proposal Website I made for a friend of mine. Utilizes HTML 5, CSS3, and Bootstrap 5
-                framework.
-                Mobile responsive design.
-            </p>
-            <ul>
-                <li>Web address:
-                    <br>
-                    <a href="https://jeffgoji.github.io/ghm/index.html" target="_blank"
-                        rel="noreferrer">https://jeffgoji.github.io/ghm/index.html</a>
-                </li>
-                <li>Git Repository:
-                    <br>
-                    <a href="https://github.com/JeffGoji/ghm" target="_blank"
-                        rel="noreferrer">https://github.com/JeffGoji/ghm</a>
-                    <br>
+                <!--New Card-->
 
-                </li>
-            </ul>
-        </article>
+                <div class="card rounded-2 card-shadow m-2 mt-3" style="width: 18rem;">
+                    <a href="https://jeffgoji.github.io/run-buddy-project/" rel="noreferrer"><img
+                            src="assets/img/runbuddyLarge.png" alt="Run Buddy Website" class="rounded card-img-top"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Run Buddy Website</h5>
+                        <p class="card-text">Website project using HTML5 and CSS3 with flexbox styling. It is 100%
+                            mobile
+                            responsive</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://jeffgoji.github.io/run-buddy-project/" rel="noreferrer" class="card-link">Web
+                            Deployment</a>
+                        <a href="https://github.com/JeffGoji/run-buddy-project" rel="noreferrer"
+                            class="card-link">GitHub
+                            Page
+                            link</a>
 
-        <article class="p-cards">
-            <h2>JavaScript guessing game</h2><a href="https://jeffgoji.com/games/game1.html" target="_blank"
-                rel="noreferrer"><img src="assets/img/game1.png" alt="JeffGoji.com picture"></a>
-            <p>This is my JavaScript based "Guess my Number!" game fashioned after a retro-80s style video game.
-                <br>This was a fun project to work on.
-            </p>
-            <ul>
-                <li>Web address:
-                    <br>
-                    <a href="https://jeffgoji.com/games/game1.html" target="_blank"
-                        rel="noreferrer">https://jeffgoji.com/games/game1.html</a>
-                </li>
-                <li>Git Repository:
-                    <br>
-                    <a href="https://github.com/JeffGoji/Number-Game" target="_blank"
-                        rel="noreferrer">https://github.com/JeffGoji/jeffgoji.com</a>
-                    <br>
+                    </div>
+                </div>
 
-                </li>
-            </ul>
-        </article>
-    </section>
+                <!--New card-->
+                <div class="card rounded-2 card-shadow m-2 mt-3" style="width: 18rem;">
+                    <a href="https://jeffgoji.com" target="_blank" rel="noreferrer"><img src="assets/img/jeffgoji.png"
+                            alt="JeffGoji.com picture" class="rounded card-img-top"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">JeffGoji.com Website</h5>
+                        <p class="card-text">My personal Mazda MX5 Website I built using HTML5, CSS3, JavaScript,
+                            Jquery, and is built on the
+                            Bootstrap 5
+                            framework for
+                            it's
+                            mobile first responsive design.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://jeffgoji.github.io/run-buddy-project/" rel="noreferrer" class="card-link">Web
+                            Deployment</a>
+                        <a href="https://github.com/JeffGoji/run-buddy-project" rel="noreferrer"
+                            class="card-link">GitHub
+                            Page
+                            link</a>
 
-    <!--End projects section-->
+                    </div>
+                </div>
 
-    <!--Contact Section-->
-    <section id="contact" class="section-title">
-        <a href="contact"></a>
-        <p>Contact Me</p>
-    </section>
 
-    <section>
-        <article class="contact">
-            <p>Feel free to use one of the the following options to contact me.
-            </p>
-            <ul>
-                <li>E-mail: <a href="mailto:jeff.lester01@outlook.com"> jeff.lester01@outlook.com</a></li>
-                <li>Phone:<a href="tel:7133717902"> 713-371-7902</a></li>
-                <li>LinkedIn Profile:<a href="https://www.linkedin.com/in/jeffrey-anderson-lester-36b23b112/ "
-                        target="_blank" rel="noreferrer"> Jeffrey
-                        Anderson-Lester</a> </li>
-                <li><a href="/project-2/assets/img/resume.pdf" target="_blank">Click here to download my Resume</a></li>
-            </ul>
-        </article>
 
-        <!--Footer section-->
+                <!--New card-->
+                <div class="card rounded-2 card-shadow m-2 mt-3" style="width: 18rem;">
+                    <a href="https://jeffgoji.github.io/ghm/index.html" target="_blank" rel="noreferrer"><img
+                            src="assets/img/ghm.png" alt="GHM Project" class="rounded card-img-top"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">GHM Website</h5>
+                        <p class="card-text">A free redesign/proposal Website I made for a friend of
+                            mine. Utilizes
+                            HTML
+                            5, CSS3, and
+                            Bootstrap 5
+                            framework.
+                            Mobile responsive design.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="https://github.com/JeffGoji/ghm" target="_blank" rel="noreferrer" class="card-link">Web
+                            Deployment</a>
+                        <a href="https://github.com/JeffGoji/ghm" target="_blank" rel="noreferrer"
+                            class="card-link">GitHub
+                            Page
+                            link</a>
 
-        <footer>
-            <h3>Made by Jeffrey Anderson-Lester. <span>&copy</span>2021</h3>
-        </footer>
+                    </div>
+                </div>
+                <!--New card-->
+                <div class="card rounded-2 card-shadow m-2 mt-3" style="width: 18rem;">
+                    <a href=href="https://jeffgoji.com/games/game1.html" target="_blank" rel="noreferrer"><img
+                            src="assets/img/game1.png" alt="JeffGoji.com picture" class="rounded card-img-top"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript guessing game</h5>
+                        <p class="card-text">This is my JavaScript based "Guess my Number!" game fashioned after a
+                            retro-80s style video game.
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <a href=href="https://jeffgoji.com/games/game1.html" target="_blank" rel="noreferrer"
+                            class="card-link">Web
+                            Deployment</a>
+                        <a href="https://github.com/JeffGoji/Number-Game" target="_blank" rel="noreferrer"
+                            class="card-link">GitHub
+                            Page
+                            link</a>
 
-        <!--JavaScript-->
-        <script src="assets/js/java.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--End projects section-->
+
+        <!--Contact Section-->
+        <section id="contact" class="text-center mt-4">
+            <a href="contact"></a>
+            <h2>Contact Me</h2>
+        </section>
+
+        <section>
+            <article class="contact">
+                <p>Feel free to use one of the the following options to contact me.
+                </p>
+                <ul>
+                    <li>E-mail: <a href="mailto:jeff.lester01@outlook.com"> jeff.lester01@outlook.com</a></li>
+                    <li>Phone:<a href="tel:7133717902"> 713-371-7902</a></li>
+                    <li>LinkedIn Profile:<a href="https://www.linkedin.com/in/jeffrey-anderson-lester-36b23b112/ "
+                            target="_blank" rel="noreferrer"> Jeffrey
+                            Anderson-Lester</a> </li>
+                    <li><a href="/project-2/assets/img/resume.pdf" target="_blank">Click here to download my
+                            Resume</a>
+                    </li>
+                </ul>
+            </article>
+
+            <!--Footer section-->
+
+            <footer>
+                <h3>Made by Jeffrey Anderson-Lester. <span>&copy</span>2021</h3>
+            </footer>
+
+            <!--Bootstrap 5.1.0-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+            <!--JavaScript-->
+            <script src="assets/js/java.js"></script>
 </body>
 
 </html>
