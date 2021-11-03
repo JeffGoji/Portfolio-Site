@@ -1,0 +1,407 @@
+/*Root custom CSS style section*/
+:root {
+  --primary-color: rgb(0, 0, 0);
+  --secondary-color: rgb(255, 255, 255);
+  --tertiary-color: rgb(230, 230, 230);
+  --card-color: rgb(194, 216, 223);
+  --shadow: rgb(60, 97, 219);
+  --outline: rgb(21, 66, 214);
+  --button: rgb(33, 51, 109);
+}
+
+/*HTML, body section*/
+
+* {
+  border: 0;
+  margin: 0;
+}
+
+html {
+  background-color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Header and Nav styling*/
+
+header {
+  background: linear-gradient(to bottom, rgb(41, 57, 201), rgba(255, 255, 255));
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  color: var(--secondary-color);
+  font-weight: bold;
+  flex-wrap: wrap;
+  font-size: 50px;
+  text-shadow: 1px 1px 6px #000000;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+header h3 {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 1px 1px 6px #000000;
+}
+
+/*end of Header section*/
+
+/*Nav bar Styling*/
+
+.topnav {
+  position: -webkit-sticky; /*Safari browser webkit*/
+  position: sticky;
+  top: 1;
+  z-index: 9999;
+}
+
+.topnav {
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  display: block;
+  color: var(--primary-color);
+  background-color: var(--card-color);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: var(--outline);
+  color: var(--secondary-color);
+}
+
+.topnav a.active {
+  background-color: var(--card-color);
+  color: var(--primary-color);
+}
+
+.topnav .icon {
+  display: flex;
+}
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: var(--card-color);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/*End Nav bar styling*/
+
+/*Section Titles section*/
+.section-title {
+  font-size: 40px;
+  color: var(--primary-color);
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 35px auto 35px auto;
+  border-bottom: 3px solid;
+}
+
+/*End Section Titles*/
+
+/*profile section*/
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.profiles p {
+  width: 600px;
+  margin: auto;
+  justify-content: flex-start;
+}
+.profiles p::first-line {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.profiles img {
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px var(--shadow);
+}
+
+/*End profile section styling*/
+
+/*Begin Projects section*/
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 1;
+  margin: auto;
+}
+
+.p-card-big {
+  border: 3px solid var(--outline);
+  box-shadow: 3px 3px 10px var(--shadow);
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px 0px 20px 0px;
+  background-color: var(--card-color);
+}
+
+.p-card-big img {
+  padding: 10px 10px 10px 10px;
+  border-radius: 15px;
+}
+
+.p-card-big h2 {
+  background-color: var(--outline);
+  color: var(--secondary-color);
+}
+
+/*end of big --card seciton*/
+
+.projects {
+  margin: 5px 5px 5px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  background-color: var(--tertiary-color);
+}
+
+.projects img {
+  max-width: 100%;
+}
+
+.projects h2 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.projects p {
+  margin: 10px;
+}
+
+.p-cards {
+  width: 410px;
+  height: 500px;
+  border: 3px solid var(--outline);
+  box-shadow: 3px 3px 10px var(--shadow);
+  border-radius: 4px;
+  background-color: var(--card-color);
+  margin: 10px 2px 40px 10px;
+}
+
+.p-cards h2 {
+  background-color: var(--outline);
+  color: var(--secondary-color);
+}
+
+.p-cards li {
+  padding-top: 2px;
+  padding-bottom: 10px;
+}
+
+.p-cards img {
+  border-radius: 4px;
+  width: 400px;
+  margin-left: 5px;
+}
+
+/*End of Projects seciton*/
+
+/*Contact Section*/
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 800px;
+  margin: auto;
+  font-size: 22px;
+  background-color: var(--card-color);
+  border: 2px solid var(--outline);
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px var(--shadow);
+}
+
+.contact p {
+  margin: 15px 15px 15px 15px;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+.contact a:hover {
+  font-weight: bolder;
+}
+
+/*End of contact seciton*/
+
+/*Footer styling*/
+
+footer {
+  margin-top: 300px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255), rgb(41, 57, 201));
+  height: 125px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  color: var(--secondary-color);
+  text-shadow: 1px 1px 3px var(--primary-color);
+}
+
+footer h4 {
+  text-shadow: 2px 2px 2px var(--primary-color);
+  margin-left: 10px;
+}
+
+/*End of Footer styling*/
+
+/*Media-queries section*/
+
+/*MEDIA QUERY FOR SMALLER DESKTOPS*/
+@media screen and (max-width: 1024px) {
+  /*HEader and Nav sections*/
+  header {
+    padding-bottom: 0;
+    flex-wrap: wrap;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  section {
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  /*p cards and profiles*/
+
+  .profiles p {
+    margin-top: 50px;
+  }
+
+  .p-cards {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .p-card-big img {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  /*contact section*/
+  .contact {
+    max-width: 90%;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS 768PX AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-content: center;
+    background-position: stretch;
+  }
+
+  /*p-cards big and small*/
+  .p-card-big img {
+    max-width: 97.5%;
+    margin: auto;
+  }
+
+  .p-cards {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /*contact section*/
+  .contact {
+    max-width: 90%;
+  }
+}
+
+/* MEDIA QUERY FOR 480px AND SMALLER */
+@media screen and (max-width: 480px) {
+  /*Header and nav sections*/
+
+  section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-content: center;
+    background-position: stretch;
+  }
+
+  /*Nav elements*/
+
+  .show {
+    position: fixed;
+    display: inline-block;
+    margin-top: 75%;
+  }
+
+  /*p-cards big and small*/
+
+  .p-card-big img {
+    max-width: 97.5%;
+    margin: auto;
+  }
+
+  .p-cards {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /*contact section*/
+  .contact {
+    max-width: 90%;
+  }
+}
+/*MEDIA QUERY FOR 375PX, IPHONE-10 SCREEN SIZE */
+@media only screen and (max-width: 374px) {
+  body {
+    display: flex;
+  }
+
+  .p-card-big img {
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  .profiles,
+  .projects,
+  .p-cards,
+  .p-card-big {
+    width: 88%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
