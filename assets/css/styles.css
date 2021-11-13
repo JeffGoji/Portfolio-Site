@@ -36,6 +36,7 @@ header h1 {
   font-weight: bold;
   font-size: 50px;
   text-shadow: 1px 1px 6px #000000;
+  text-align: center;
 }
 
 header h3 {
@@ -43,6 +44,7 @@ header h3 {
   font-weight: bold;
   font-size: 30px;
   text-shadow: 1px 1px 6px #000000;
+  text-align: center;
 }
 
 /*end of Header section*/
@@ -76,7 +78,20 @@ header h3 {
 
 /*End of contact seciton*/
 
-/*card styling*/
+/*Card styling*/
+
+h5 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-header {
+  background-color: lightgray;
+}
+
+.card-title {
+  font-weight: bold;
+}
 
 .card-shadow {
   box-shadow: 2px 2px 6px var(--shadow);
