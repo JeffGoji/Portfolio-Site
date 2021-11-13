@@ -49,9 +49,9 @@ header h3 {
 
 /*end of Header section*/
 
-/*Contact Section*/
+/*Contact Section --- Using Bootstrap classes currently*/
 
-.contact {
+/*.contact {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -62,7 +62,7 @@ header h3 {
   border: 2px solid var(--outline);
   border-radius: 4px;
   box-shadow: 3px 3px 10px var(--shadow);
-}
+}*/
 
 .contact p {
   margin: 15px 15px 15px 15px;
@@ -103,7 +103,6 @@ h5 {
 footer {
   margin-top: 300px;
   background: linear-gradient(to bottom, rgba(255, 255, 255), rgb(41, 57, 201));
-  height: 125px;
   color: var(--secondary-color);
   text-shadow: 1px 1px 3px var(--primary-color);
 }

@@ -27,10 +27,10 @@
 
     <!--Begin header/navigation section-->
 
-    <header class="flex-row">
-        <h1>JEFFREY ANDERSON-LESTER</h1>
-        <nav class="navbar navbar-dark bg-primary">
-            <div class="container-fluid">
+    <header class="container-fluid">
+        <div class="row">
+            <h1>JEFFREY ANDERSON-LESTER</h1>
+            <nav class="navbar navbar-dark bg-primary">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -45,10 +45,11 @@
                         <a class="nav-link" href="#contact">Contact Me</a>
 
 
-                    </div>`
+                    </div>
                 </div>
-            </div>
-        </nav>
+
+            </nav>
+        </div>
 
     </header>
     <!--End header/navigation section-->
@@ -57,7 +58,7 @@
 
     <!--Begin Profile section-->
     <section id="profile" class="container-fluid">
-        <div class="row mb-3">
+        <div class=" row mb-3">
             <div class="col-3">
                 <img src="./assets/img/Profile1.jpg" alt="Jeffrey Anderson-Lester"
                     class="img-fluid shadow bg-primary rounded-2 ml-3 mt-3">
@@ -102,13 +103,13 @@
 
     <section id="projects" class="section-title container-fluid">
         <a href="projects"></a>
-        <H2 class="text-center">Projects</H2>
-        <hr>
-        </hr>
+        <div class="row">
+
+            <H2 class="text-center card-header bg-primary text-white mt-5 mb-3">Projects</H2>
+        </div>
 
         <!--Big project-->
         <div class="projects">
-
             <div class="card card-shadow" style="width: auto;">
                 <img src="./assets/img/classProject1.png" class="card-img-top rounded" alt="Texas Stargazing Website">
                 <div class="card-body">
@@ -448,42 +449,46 @@
                 </div>
             </div>
         </section>
+    </section>
 
-        <!--End projects section-->
+    <!--End projects section-->
 
-        <!--Contact Section-->
-        <section id="contact" class="text-center mt-4">
+    <!--Contact Section-->
+    <section id="contact" class="text-center mt-4 container-fluid">
+        <div class="row">
+
             <a href="contact"></a>
-            <h2>Contact Me</h2>
-        </section>
+            <h2 class="card-header bg-primary text-white">Contact Me</h2>
 
-        <section>
-            <article class="contact">
-                <p>Feel free to use one of the the following options to contact me.
-                </p>
-                <ul>
-                    <li>E-mail: <a href="mailto:jeff.lester01@outlook.com"> jeff.lester01@outlook.com</a></li>
-                    <li>Phone:<a href="tel:7133717902"> 713-371-7902</a></li>
-                    <li>LinkedIn Profile:<a href="https://www.linkedin.com/in/jeffrey-anderson-lester-36b23b112/ "
-                            target="_blank" rel="noreferrer"> Jeffrey
-                            Anderson-Lester</a> </li>
-                    <li><a href="/project-2/assets/img/resume.pdf" target="_blank">Click here to download my
-                            Resume</a>
-                    </li>
-                </ul>
-            </article>
 
-            <!--Footer section-->
+            <p>Feel free to use one of the the following options to contact me.
+            </p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">E-mail: <a href="mailto:jeff.lester01@outlook.com">
+                        jeff.lester01@outlook.com</a>
+                </li class="list-group-item">
+                <li class="list-group-item">Phone:<a href="tel:7133717902"> 713-371-7902</a></li>
+                <li class="list-group-item">LinkedIn Profile:<a
+                        href="https://www.linkedin.com/in/jeffrey-anderson-lester-36b23b112/ " target="_blank"
+                        rel="noreferrer"> Jeffrey
+                        Anderson-Lester</a> </li>
+                <li class="list-group-item"><a href="/project-2/assets/img/resume.pdf" target="_blank">Click here to
+                        download my
+                        Resume</a>
+                </li>
+            </ul>
+        </div>
 
-            <footer>
-                <h3>Made by Jeffrey Anderson-Lester. <span>&copy</span>2021</h3>
-            </footer>
+    </section>
 
-            <!--Bootstrap 5.1.0-->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-            <!--JavaScript-->
-            <script src="assets/js/java.js"></script>
+
+
+    <!--Bootstrap 5.1.0-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <!--JavaScript-->
+    <script src="assets/js/java.js"></script>
+
 </body>
 
 </html>
