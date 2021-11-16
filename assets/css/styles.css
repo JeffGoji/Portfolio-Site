@@ -49,6 +49,12 @@ header h3 {
 
 /*end of Header section*/
 
+/*General styling*/
+h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
 /*Contact Section --- Using Bootstrap classes currently*/
 
 /*.contact {
@@ -80,7 +86,7 @@ header h3 {
 
 /*Card styling*/
 
-h5 {
+h4 {
   text-align: center;
   font-weight: bold;
 }
@@ -102,7 +108,7 @@ h5 {
 
 footer {
   margin-top: 200px;
-  height: 40px;
+  height: 60px;
   background: linear-gradient(to bottom, rgb(29, 142, 248), rgb(0, 70, 184));
   color: var(--secondary-color);
   text-shadow: 1px 1px 3px var(--primary-color);
